@@ -1,0 +1,345 @@
+:root {
+    --corprincipal1: black;
+    --corprincipal2: white;
+    --corsegundaria1: #F8CA11;
+    --corsegundaria2: #eec10f;
+
+    --corsombra: rgba(0, 0, 0, 0.349);
+    --corsombra2: #eec10f71;
+}
+
+
+* {margin: 0;padding: 0;}
+body {font-family: Arial, Helvetica, sans-serif; background-color: black; width: 100%;}
+
+main img {
+    max-width: 90%;
+    min-width: 80px;
+}
+
+/* Configuração do Cabeçalho */
+header {
+    display: flex;
+    margin: 20px 10px;
+}
+
+div.cabecalho_esquerdo {
+    width: 100%;
+}
+div.cabecalho_direito {
+    margin-right: 30px;
+}
+
+/* configuração da lista do menu/navegação do cabeçalho */
+header ul {
+    display: flex;
+}
+/* configuração dos itens do menu/navegação do cabeçalho */
+header li {
+    padding-right: 20px;
+    padding-top: 13px;
+    font-size: 1.5em;
+    list-style-type: none; 
+}
+/* dos os links do cabeçalho */
+header a {
+    text-decoration: none;
+    color: white;
+}
+/* animação dos links do cabeçalho */
+header a:hover {
+    color: var(--corsegundaria1);
+}
+
+/* Configuração do Conteúdo */
+main.conteudo {
+    color: var(--corprincipal2);
+}
+div.conteudo__reserva {
+    display: flex;
+    margin: 25px;
+}
+
+/* ------------------------------------------*/
+/* lado direito */
+div.conteudo__reserva_esquerdo {
+    width: 100%;
+}
+div.conteudo__reserva_esquerdo-numero {
+    background-color: var(--corsegundaria1);
+    width: 346px;
+    height: 140px;
+    margin: auto;
+    border-radius: 5px;
+}
+div.conteudo__reserva_esquerdo-numero h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+div.conteudo__reserva_esquerdo-numero p {
+    padding: 20px;
+    font-size: 1.5em;
+    color: var(--corprincipal1);
+    font-weight: 550;
+    text-align: center;
+}
+
+/* lado direito */
+div.conteudo__reserva_direito {
+    margin-right: 3%;
+}
+div.conteudo__reserva_direito h2 {
+    width: 110%;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+div.conteudo__reserva_direito-reservartaxi {
+    background-color: var(--corprincipal2);
+    padding: 20px ;
+    border-radius: 20px;
+    width: 438px;
+    height: 230px; 
+}
+input.caixas_de_texto-cadastro, input#procurar {
+    display: block;
+}
+/* paragrafo dentro do bloco de agendamento */
+div.conteudo__reserva_direito-reservartaxi p {
+    color: var(--corprincipal1);
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+}
+input.caixas_de_texto-cadastro {
+    width: 80%;   
+    margin: 10px auto;
+    padding: 6px;
+}
+input#caixas_de_texto-cadastro-senha {
+    display: block;
+    width: 30%;   
+    margin: 10px 35px;
+    padding: 5px;
+}
+
+input#procurar {
+    padding: 7px;
+    margin-top: -10px;
+    margin-right: 30px;
+    float: right;
+    border-radius: 5px;
+    background-color: var(--corsegundaria1);
+    border: 1px solid transparent;
+}
+input#procurar:hover {
+    box-shadow: 0px 0px 10px var(--corsegundaria2);
+    background-color: var(--corsegundaria2);  
+}
+/* ------------------------------------------*/
+
+/* Animação do texto dos planos */
+.conteudo__planos_animacao {
+    display: flex;
+    justify-content: center; 
+}
+.conteudo__planos_animacao .conteudo__planos_animacao-estatico {
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--corprincipal2);
+}
+.conteudo__planos_animacao .conteudo__planos_animacao-dinamico {  
+    margin-left: 15px;
+}
+.conteudo__planos_animacao-dinamico  li{
+    color: var(--corsegundaria1);
+    list-style-type: none;
+    font-size: 2em;
+    font-weight: 500;   
+}
+.conteudo__planos_animacao-dinamico li span {
+    position: relative;
+}
+.conteudo__planos_animacao-dinamico li span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    animation:  typing 1.5s steps(50) infinite;
+    background-color: var(--corprincipal1);
+}
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/* Configuração dos planos */
+.conteudo__planos_opcoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+/* plano basico */
+.conteudo__planos_opcoes-basico {
+    background: var(--corprincipal2);
+    width: 300px;
+    height: 275px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/*.conteudo__planos_opcoes-basico:hover {
+    box-shadow: 1px 1px 5px var(--corsombra2);
+    margin-top: 20px;
+}*/
+.conteudo__planos_opcoes-basico h3 {
+    text-align: center;
+    color: var(--corprincipal1);
+    margin-top: 10px;
+}
+.conteudo__planos_opcoes-basico p{
+    color: var(--corprincipal1);
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 0px 20px;
+    margin: 15px 0px;  
+}
+.conteudo__planos_opcoes-basico img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* planos master */
+.conteudo__planos_opcoes-master {
+    background: var(--corprincipal2);
+    width: 300px;
+    height: 275px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/*.conteudo__planos_opcoes-master:hover {
+    box-shadow: 1px 1px 5px var(--corsombra2);
+    margin-top: 20px;
+}*/
+.conteudo__planos_opcoes-master h3 {
+    text-align: center;
+    color: var(--corprincipal1);
+    margin-top: 10px;
+}
+.conteudo__planos_opcoes-master p {
+    color: var(--corprincipal1);
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 0px 20px;
+    margin: 15px 0px;  
+}
+.conteudo__planos_opcoes-master img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* plano super */
+.conteudo__planos_opcoes-super {
+    background: var(--corprincipal2);
+    width: 300px;
+    height: 275px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/*.conteudo__planos_opcoes-super:hover {
+    box-shadow: 1px 1px 5px var(--corsombra2);
+    margin-top: 20px;
+}*/
+.conteudo__planos_opcoes-super h3 {
+    text-align: center;
+    color: var(--corprincipal1);
+    margin-top: 10px;
+}
+.conteudo__planos_opcoes-super p {
+    color: var(--corprincipal1);
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 0px 20px;
+    margin: 15px 0px;  
+}
+.conteudo__planos_opcoes-super img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Parte de explicação do porque contratar nossos serviços */
+.conteudo__noticia {
+    background: var(--corprincipal2);
+    color: var(--corprincipal1);
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+    align-items: center;
+}
+/* deixando todos que foram marcados com strong em amarelo */
+.conteudo__noticia strong{
+    color: var(--corsegundaria2);
+}
+.conteudo__noticia h2{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 2.5em;
+}
+
+/* configuração dos grupos de explicações do porque contratar */
+.conteudo__noticia_grupo {
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+.conteudo__noticia_grupo h3{
+    margin-top: 18px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.conteudo__noticia_grupo p{
+    margin-top: 18px;
+    width: 450px;
+    font-size: 1.2em;
+    margin: auto;
+}
+/* mudando a cor de amarelo para preto do strong marcado nas palavras "IA" */
+strong#strong-corpreto {
+    color: var(--corprincipal1);
+}
+
+
+/* Configuração do rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 60px 10px 60px;
+}
+/* todos os h3 do footer mudando a cor e o tamanho*/
+footer h3 {
+    color: var(--corprincipal2);
+    font-size: 2em;
+}
+/* todos os intems(li) da lista(ul) */
+footer li {
+    margin: 10px 15px;
+}
+/* todos os links do footer */
+footer a {
+    color: var(--corprincipal2);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+/* animação dos links: mudando a cor */
+footer  a:hover {
+    color: var(--corsegundaria1);
+}
+/* configuração do id indicando quem desenvolveu: cor e posicionamento */
+#rodape_desenvolvedor {
+    color: #eec10f;
+    align-self: flex-end;
+    font-style: italic;
+}

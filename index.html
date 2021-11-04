@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashApp</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="cabecalho_esquerdo">
+            <picture>
+                <source media="(max-width: 400px)" srcset="img/logo_pequeno.png" type="image/png">
+                <source media="(max-width: 800px )" srcset="img/logo_medio.png" type="image/png">
+                <img src="img/logo_normal.png" alt="Logo" draggable="false">
+            </picture>
+
+        </div>
+        <div class="cabecalho_direito">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Táxi</a>
+                    </li>
+                    <li>
+                        <a href="#">Reserva</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="conteudo">
+
+         <!-- Conteúdo do agendamento -->
+        <div class="conteudo__reserva">
+
+             <!-- Lado esquerdo -->
+            <div class="conteudo__reserva_esquerdo">
+                 <!-- contato -->
+                <div class="conteudo__reserva_esquerdo-numero">
+                    <h1>AGENDE AGORA</h1>
+                    <p>(+55) 5555555550</p>
+                </div>
+                 <!-- imagem do carro -->
+                <div id="conteudo__reserva_esquerdo-carro">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="img/carro_pequeno.png" type="image/png">
+                        <source media="(max-width: 900px )" srcset="img/carro_medio.png" type="image/png">
+                        <img src="img/carro_normal.png" alt="Táxi">
+                    </picture>
+                </div>
+            </div>
+
+                    <!-- Lado direito -->
+            <div class="conteudo__reserva_direito">
+                <h2>Reserve um táxi para chegar ao seu destino</h2>
+                <div class="conteudo__reserva_direito-reservartaxi">
+                    <p>Seu parceiro de viagem todos os dias</p>
+                    <input type="email" name="email" value="Email" class="caixas_de_texto-cadastro">
+                    <input type="text" name="nome" value="Nome" class="caixas_de_texto-cadastro">
+                    <input type="text" name="nome" value="Sobrenome" class="caixas_de_texto-cadastro">
+                    <input type="password" name="nome" value="Senha" id="caixas_de_texto-cadastro-senha">
+                        <!--<input type="date" name="dia" id="dia">
+                        <select id="planos" name="planos">
+                            <option value="basico">Básico</option>
+                            <option value="master">Master</option>
+                            <option value="super" selected>Super</option>  -->               
+                   <input type="button" value="Procurar" id="procurar"> 
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Parte dos planos -->
+        <div class="conteudo__planos">
+
+            <div class="conteudo__planos_animacao">
+               <div class="conteudo__planos_animacao-estatico">Nossos</div>
+               <ul class="conteudo__planos_animacao-dinamico">
+                   <li>
+                       <span>Planos</span>
+                   </li>
+                   
+               </ul> 
+            </div>
+            <div class="conteudo__planos_opcoes">
+                <div class="conteudo__planos_opcoes-basico">
+                    <h3>Básico</h3>
+                    <p class="conteudo__planos_opcoes-basico-txtjustificado">Nossos modelos dos carros de entrada que cabe no bolso Disponível</p>
+                    <img src="img/carro_pequeno.png" alt="Imagem de um Táxi">
+                </div>
+                <div class="conteudo__planos_opcoes-master">
+                    <h3>Master</h3>
+                    <p class="conteudo__planos_opcoes-basico-txtjustificado">Nossos modelos dos carros de entrada que cabe no bolso Disponível</p>
+                    <img src="img/carro_pequeno.png" alt="Imagem de um Táxi">
+                </div>
+                <div class="conteudo__planos_opcoes-super">
+                    <h3>Super</h3>
+                    <p class="conteudo__planos_opcoes-basico-txtjustificado">Nossos modelos dos carros de entrada que cabe no bolso Disponível</p>
+                    <img src="img/carro_pequeno.png" alt="Imagem de um Táxi">
+                </div>
+            </div>
+            
+        </div>
+        <!-- Parte do porque contratar -->
+        <div class="conteudo__noticia">
+            <h2>Porque Contratar Nossos <strong>Taxistas</strong></h2>
+            <div class="conteudo__noticia_grupo">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/carteira_normal.png" type="image/png">
+                    <img src="img/carteira.png" alt="Foto de uma carteira">
+                </picture>
+                <h3><strong>AppTáxi</strong> para cada bolso</h3>
+                <p>
+                    Todos os nossos serviços foram feito para todas as pessoas que procuram um táxi disponível no dia e horário marcado
+                </p>
+            </div>
+            <div class="conteudo__noticia_grupo">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/seguranca_normal.png" type="image/png">
+                    <img src="img/seguranca.png" alt="Mulher segurando um celular na frente de um táxi">
+                </picture>
+                <h3>Passeios seguros</h3>
+                <p>
+                    Nossa <strong id="strong-corpreto">IA</strong> monitora 24h por dia todas as corrida em tempo real e todas ações suspeitas ou falta de respeito serão clasificada como prioridade.
+                </p>
+            </div>
+            <div class="conteudo__noticia_grupo">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/taxis_normal.png" type="image/png">
+                    <img src="img/taxis.png" alt="Foto de táxis alinhados na avenida">
+                </picture>
+                <h3>Disponibilidade</h3>
+                <p>
+                    Nossos <strong>taxistas</strong> estão 24h disponíveis para atenderem todos os clientes que precisam chegar a seu destino no dia marcado.
+                </p>
+            </div>
+            <div class="conteudo__noticia_grupo">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/taxis_normal.png" type="image/png">
+                    <img src="img/taxis.png" alt="Foto de táxis alinhados na avenida">
+                </picture>
+                <h3>Cidades</h3>
+                <p>
+                    Todas as cidades metropolitanas do Brasil estão com nossos <strong>taxistas</strong> 24h disponíveis.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape__ladoesquerdo">
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="img/circulo_icon.png" alt="">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/circulo_icon.png" alt="">
+                        Táxi
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/circulo_icon.png" alt="">
+                        Reserva
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/circulo_icon.png" alt="">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p id="rodape_desenvolvedor">&copy; Desenvolvido por Allysson</p>
+        <div class="rodape__ladodireito">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/allysson.mv/" target="_blank">
+                        <img src="img/instagram_icon.png" alt="">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alisson-st-0936a7210/" target="_blank">
+                        <img src="img/linkdin_icon.png" alt="">
+                        Linkedin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/AllissonCosta" target="_blanck">
+                        <img src="img/github_icon.png" alt="">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
