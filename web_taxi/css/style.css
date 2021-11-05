@@ -5,12 +5,15 @@
     --corsegundaria2: #eec10f;
 
     --corsombra: rgba(0, 0, 0, 0.349);
-    --corsombra2: #eec10f71;
+    --corsombra2: #eec10f4b;
 }
 
 
 * {margin: 0;padding: 0;}
-body {font-family: Arial, Helvetica, sans-serif; background-color: black; width: 100%;}
+body {font-family: Arial, Helvetica, sans-serif; 
+    background-color: black; 
+    width: 100%;
+}
 
 main img {
     max-width: 90%;
@@ -21,10 +24,12 @@ main img {
 header {
     display: flex;
     margin: 20px 10px;
+    background: var(--corprincipal1);
 }
 
 div.cabecalho_esquerdo {
     width: 100%;
+    margin-left: 30px;
 }
 div.cabecalho_direito {
     margin-right: 30px;
@@ -56,85 +61,18 @@ main.conteudo {
     color: var(--corprincipal2);
 }
 div.conteudo__reserva {
-    display: flex;
-    margin: 25px;
-}
-
-/* lado direito */
-div.conteudo__reserva_esquerdo {
-    width: 100%;
-}
-div.conteudo__reserva_esquerdo-numero {
-    background-color: var(--corsegundaria1);
-    width: 346px;
-    height: 140px;
-    margin: auto;
-    border-radius: 5px;
-}
-div.conteudo__reserva_esquerdo-numero h1 {
-    text-align: center;
-    padding-top: 20px;
-}
-div.conteudo__reserva_esquerdo-numero p {
-    padding: 20px;
-    font-size: 1.5em;
-    color: var(--corprincipal1);
-    font-weight: 550;
+    margin-top: 90px;
+    margin-bottom: 90px;
     text-align: center;
 }
-
-/* lado direito */
-div.conteudo__reserva_direito {
-    margin-right: 3%;
-}
-div.conteudo__reserva_direito h2 {
-    width: 110%;
-    margin-bottom: 20px;
-    margin-left: -10px;
-}
-div.conteudo__reserva_direito-reservartaxi {
-    background-color: var(--corprincipal2);
-    padding: 20px ;
-    border-radius: 20px;
-    width: 438px;
-    height: 230px; 
-}
-input.caixas_de_texto-cadastro, input#procurar {
-    display: block;
-}
-/* paragrafo dentro do bloco de agendamento */
-div.conteudo__reserva_direito-reservartaxi p {
-    color: var(--corprincipal1);
-    text-align: center;
-    padding: 5px;
-    font-size: 1.3em;
-}
-input.caixas_de_texto-cadastro {
-    width: 80%;   
-    margin: 10px auto;
-    padding: 6px;
-}
-input#caixas_de_texto-cadastro-senha {
-    display: block;
-    width: 30%;   
-    margin: 10px 35px;
-    padding: 5px;
+div.conteudo__reserva h1{
+    margin-bottom: 90px;
+    
 }
 
-input#procurar {
-    padding: 7px;
-    margin-top: -10px;
-    margin-right: 30px;
-    float: right;
-    border-radius: 5px;
-    background-color: var(--corsegundaria1);
-    border: 1px solid transparent;
+.conteudo__planos {
+    background: var(--corprincipal1);
 }
-input#procurar:hover {
-    box-shadow: 0px 0px 10px var(--corsegundaria2);
-    background-color: var(--corsegundaria2);  
-}
-
 /* Animação do texto dos planos */
 .conteudo__planos_animacao {
     display: flex;
