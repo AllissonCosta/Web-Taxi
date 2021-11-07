@@ -20,8 +20,11 @@
 
         </div>
         <div class="cabecalho_direito">
-            <nav>
-                <ul>
+            <nav id="nav">
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="menuhamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
                     <li>
                         <a href="#">Inicio</a>
                     </li>
@@ -35,7 +38,9 @@
                         <a href="#">Login</a>
                     </li>
                 </ul>
-            </nav>
+            </nav>   
+        </div>
+        
         </div>
     </header>
 
@@ -194,6 +199,6 @@
             </ul>
         </div>
     </footer>
-    
+    <script src="js/interacao.js"></script>
 </body>
 </html>
